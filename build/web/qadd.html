@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add questions</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+            .add {
+                background-color: #fff;
+                max-width: 400px;
+                margin: 130px auto;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .add div {
+                margin-bottom: 15px;
+            }
+            .add input[type="text"] {
+                width: 100%; /* Adjusted width for responsiveness */
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            .add button {
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 4px;
+                cursor: pointer;
+                width: 100%; /* Adjusted width for responsiveness */
+            }
+            .add button:hover {
+                background-color: #0056b3;
+            }
+            h2 {
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="addquestions">
+            <div class="add">
+                <!--            <div> Course<input type="text" name="course"/></div>
+                            <div> Subject<input type="text" name="subject"/></div>-->
+                <div> Question<input type="text" name="question"/></div>
+                <div> Option 1<input type="text" name="option1"/></div>
+                <div> Option 2<input type="text" name="option2"/></div>
+                <div> Option 3<input type="text" name="option3"/></div>
+                <div> Option 4<input type="text" name="option4"/></div>
+                <div> Answer<input type="text" name="answer"/></div>
+                <div><button type="submit" name="add" value="add"><h2>ADD</h2></button></div>
+            </div>
+        </form>
+    </body>
+</html>

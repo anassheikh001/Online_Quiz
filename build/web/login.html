@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="alogin.css">
+        <title>Quizzey</title>
+        <style>
+            body, h1, h2, p, ul, li, footer {
+                margin: 0;
+                padding: 0;
+                color: #7e57c2;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                background-color: whitesmoke;
+            }
+
+            nav {
+                background-color: whitesmoke;
+                box-shadow: #fff;
+                color: #7e57c2;
+                padding: 10px 20px; 
+                display: flex;
+                justify-content: space-between;
+                align-items: center; 
+            }
+
+            .logo h1 {
+                margin: 0;
+            }
+
+            .logo img {
+                max-width: 100px;
+                height: auto;
+            }
+
+            .nav1 {
+                margin-top: 20px;
+                display: flex;
+            }
+
+            .nav1 a {
+                color: #7e57c2;
+                text-decoration: none;
+                margin: 0 10px;
+                transition: color 0.3s ease;
+            }
+
+            .nav1 a:hover {
+                color: #ffd700; 
+            }
+            @media (max-width: 768px) {
+                .logo img {
+                    max-width: 80px; 
+                }
+
+                .nav1 {
+                    margin-top: 10px;
+                    flex-direction: column;
+                    align-items: center; 
+                }
+
+                .nav1 a {
+                    margin: 5px 0;
+                    display: block;
+                }
+            }
+
+            .signInCard {
+                max-width: 400px;
+                margin: 0 auto; 
+                padding: 40px 20px; 
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                border-radius: 20px;
+                text-align: center;
+            }
+
+            .signInCard h1 {
+                font-weight: bold;
+                color: #7e57c2;
+                margin-bottom: 24px;
+            }
+
+            #signInForm {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #signInForm input {
+                width: 100%;
+                height: 38px;
+                margin-bottom: 16px;
+                box-sizing: border-box;
+                border: 1px solid #c0c0c0;
+                border-radius: 8px;
+                padding: 6px 12px;
+                font-size: 1rem;
+            }
+
+            #signInForm a {
+                color: #7e57c2;
+                text-decoration: none;
+                margin-bottom: 16px;
+                font-size: 0.9rem;
+                display: block;
+            }
+
+            #signInForm button {
+                width: 100%;
+                height: 38px;
+                margin-bottom: 16px;
+                background-color: #7e57c2;
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            #signInForm button:hover {
+                background-color: #6a1b9a;
+            }
+
+            .signInCard span {
+                display: block;
+                margin-top: 16px;
+                font-size: 0.9rem;
+            }
+
+            .sign-up {
+                color: #7e57c2;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <h1><b>Quizzey</b></h1>
+            </div>
+            <div class="nav1">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </nav>
+        <div class="signInCard">
+            <h1>QUIZZEY</h1>
+            <form id="signInForm" action="stdlogin">
+                <input type="email" placeholder="Email" name="stdemail" required>
+                <input type="password" placeholder="Password" name="stdpass" required>
+                <a href="#">Forgot Password?</a>
+                <button type="submit">LOGIN</button>
+            </form>
+            <span>Don't have an account ? <a class="sign-up" href="index.html">Sign Up</a></span>
+        </div>
+    </body>
+</html>
