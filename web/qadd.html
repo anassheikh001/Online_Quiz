@@ -43,10 +43,16 @@
             h2 {
                 margin: 0;
             }
+            .back-button {
+                background-color: #6c757d;
+            }
+            .back-button:hover {
+                background-color: #5a6268;
+            }
         </style>
     </head>
     <body>
-        <form action="addquestions">
+        <form action="addquestions" method="post">
             <div class="add">
                 <!--            <div> Course<input type="text" name="course"/></div>
                             <div> Subject<input type="text" name="subject"/></div>-->
@@ -57,6 +63,7 @@
                 <div> Option 4<input type="text" name="option4"/></div>
                 <div> Answer<input type="text" name="answer"/></div>
                 <div><button type="submit" name="add" value="add"><h2>ADD</h2></button></div>
+                <div><button type="button" class="back-button" onclick="window.location.href='alogin.html'"><h2>Go Back</h2></button></div>
             </div>
         </form>
     </body>

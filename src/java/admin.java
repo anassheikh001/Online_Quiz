@@ -8,7 +8,7 @@ public class admin extends HttpServlet {
     public Connection con = null;
     public PreparedStatement ps = null;
     public ResultSet rs = null;
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
             response.setContentType("text/html");
             PrintWriter pw = response.getWriter();

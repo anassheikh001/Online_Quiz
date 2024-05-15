@@ -10,7 +10,7 @@ public class stdlogin extends HttpServlet {
     public PreparedStatement ps = null;
     public ResultSet rs = null;
 
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         response.setContentType("text/html");
 
