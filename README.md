@@ -3,6 +3,7 @@
 3) Also, Admin have to login, after login admin can add new questions in quiz.
 4) For database I use MySQL.
 5) There are totall two tables in the database.
+   
     a) Student Details:- In this table details of registered students are stored.
    
    ![image](https://github.com/anassheikh001/Online_Quiz/assets/153191817/cebcc5be-2ab1-4ccb-8deb-1515331fc606)
